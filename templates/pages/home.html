@@ -1,0 +1,313 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+{% include 'includes/header.html' %}
+<body>
+  <main>
+{% include 'pages/sidebar.html' %}
+    <div class="main-content">
+{% include 'pages/navbar.html' %}                     <!-- NAVBAR -->
+      <article class="about  active" data-page="about"> <!--ABOUT-->
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+{% for profile in profiles %}
+        <section class="about-text">
+        {{profile.about_me | safe}}
+        </section>
+{% endfor %}
+        <section class="service">
+                  <h3 class="h3 service-title">What i'm doing</h3>
+                  <ul class="service-list">
+                    {% for service in services %}
+                    <li class="service-item">
+                      <div class="service-icon-box">
+                        <img src="{{ service.icon_url.url }}
+                        " alt="design icon" width="40">
+                      </div>
+                      <div class="service-content-box">
+                        <h4 class="h4 service-item-title">{{ service.title }}</h4>
+                        <p class="service-item-text">
+                          {{ service.description }}
+                        </p>
+                      </div>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </section>
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <ul class="testimonials-list has-scrollbar">
+            {% for testimonial in testimonials %}
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="{{ testimonial.testimonial_avi.url }}" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>{{testimonial.testimonial_title}}</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    {{testimonial.testimonials_text | safe}}
+                  </p>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+              <img src="{% static './images/icon-quote.svg' %}" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>{{testimonial.testimonial_title}}</h4>
+              <time datetime="{{testimonial.created}}">{{testimonial.created}}</time>
+              <div data-modal-text>
+                <p>
+                  {{testimonial.testimonials_text | safe}}
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="clients">
+          <h3 class="h3 clients-title">Clients</h3>
+          <ul class="clients-list has-scrollbar">
+            {% for client in clients %}
+            <li class="clients-item">
+              <a href="#">
+                <img src="{{client.client_logo.url}}" alt="client logo">
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+      </article>
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="school-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+          <ol class="timeline-list">
+            {% for education in educations %}
+            <li class="timeline-item content-card">
+              <h4 class="h4 timeline-item-title">{{education.school_name}}</h4>
+              <span>{{education.qualification}}</span>
+              <span>{{education.timeline}}</span>
+              <p class="timeline-text">
+                {{education.summary | safe}}
+              </p>
+            </li>
+            {% endfor %}
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="desktop-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Experience</h3>
+          </div>
+          <ol class="timeline-list" >
+            {% for experience in experiences %}
+            <li class="timeline-item content-card">
+              <h4 class="h4 timeline-item-title">{{experience.organisation_name}}</h4>
+              <span>{{experience.postion}}</span>
+              <span>{{experience.timeline}}</span>
+              <p class="timeline-text">
+                {{experience.summary | safe}}
+              </p>
+            </li>
+            {% endfor %}
+          </ol>
+        </section>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="speedometer-outline"></ion-icon>
+            </div>
+            <h3 class="h3">My Skills</h3>
+          </div>
+                <ol class="timeline-list">
+                  {% for skill in skills %}
+                  <li class="timeline-item content-card">
+                    <h4 class="h4 timeline-item-title">{{skill.skill_title}}</h4>
+                    <p class="timeline-text">
+                      {{skill.skill_summary | safe}}
+                    </p>
+                  </li>
+                  {% endfor %}
+                </ol>
+        </section>
+      </article>
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            {% for project in projects %}
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="{{project.photo.url}}" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">{{project.project_title}}</h3>
+
+                <p class="project-category">{{project.category}}</p>
+              </a>
+            </li>
+
+            {% endfor %}
+
+          </ul>
+
+        </section>
+
+      </article>
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            {% for post in posts %}
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="{{post.pub_photo.url}}" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">{{post.category}}</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">{{post.pub_date}}</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">{{post.title}}</h3>
+
+                  <p class="blog-text">
+                    {{post.content}}
+                  </p>
+                </div>
+              </a>
+            </li>
+            {% endfor %}
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="{% url 'home' %}" method="POST" class="form" data-form>
+            {% include 'includes/messages.html' %}
+            {% csrf_token %}
+            <div class="input-wrapper">
+              <input type="text" name="full_name" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+{% include 'includes/footer.html' %}
+</body>
+
+</html>

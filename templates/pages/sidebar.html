@@ -1,0 +1,133 @@
+{% load static %}<!--
+     - #SIDEBAR
+   -->
+{% for profile in profiles %}
+   <aside class="sidebar" data-sidebar>
+
+     <div class="sidebar-info">
+
+       <figure class="avatar-box">
+         <img src="{{ profile.photo.url }}" alt="{{ profile.first_name }}" width="80">
+       </figure>
+
+       <div class="info-content">
+         <h1 class="name" title="name">{{profile.first_name}} {{profile.last_name}}</h1>
+
+         <p class="title">{{profile.designation}}</p>
+       </div>
+
+       <button class="info_more-btn" data-sidebar-btn>
+         <span>Show Contacts</span>
+
+         <ion-icon name="chevron-down"></ion-icon>
+       </button>
+
+     </div>
+
+     <div class="sidebar-info_more">
+
+       <div class="separator"></div>
+
+       <ul class="contacts-list">
+
+         <li class="contact-item">
+
+           <div class="icon-box">
+             <ion-icon name="mail-outline"></ion-icon>
+           </div>
+
+           <div class="contact-info">
+             <p class="contact-title">Email</p>
+
+             <a href="mailto:richard@example.com" class="contact-link">{{profile.email}}</a>
+           </div>
+
+         </li>
+
+         <li class="contact-item">
+
+           <div class="icon-box">
+             <ion-icon name="phone-portrait-outline"></ion-icon>
+           </div>
+
+           <div class="contact-info">
+             <p class="contact-title">Phone</p>
+             <a href="tel:{{ profile.phone_number }}" class="contact-link">{{ profile.phone_number }}</a>
+           </div>
+
+         </li>
+
+         <li class="contact-item">
+
+           <div class="icon-box">
+             <ion-icon name="calendar-outline"></ion-icon>
+           </div>
+
+           <div class="contact-info">
+             <p class="contact-title">Birthday</p>
+
+             <time datetime="1982-06-23">{{profile.date_of_birth}}</time>
+           </div>
+
+         </li>
+
+         <li class="contact-item">
+
+           <div class="icon-box">
+             <ion-icon name="location-outline"></ion-icon>
+           </div>
+
+           <div class="contact-info">
+             <p class="contact-title">Location</p>
+             <address>{{ profile.location }}</address>
+           </div>
+
+         </li>
+
+       </ul>
+
+       <div class="separator"></div>
+
+       <ul class="social-list">
+
+         <ul class="social-list">
+     {% if profile.facebook_link %}
+         <li class="social-item">
+             <a href="{{ profile.facebook_link }}" class="social-link" target="_blank">
+                 <ion-icon name="logo-facebook"></ion-icon>
+             </a>
+         </li>
+     {% endif %}
+
+     {% if profile.twitter_link %}
+         <li class="social-item">
+             <a href="{{ profile.twitter_link }}" class="social-link" target="_blank">
+                 <ion-icon name="logo-twitter"></ion-icon>
+             </a>
+         </li>
+     {% endif %}
+
+     {% if profile.instagram_link %}
+         <li class="social-item">
+             <a href="{{ profile.instagram_link }}" class="social-link" target="_blank">
+                 <ion-icon name="logo-instagram"></ion-icon>
+             </a>
+         </li>
+     {% endif %}
+
+     {% if profile.linkedin_link %}
+         <li class="social-item">
+             <a href="{{ profile.linkedin_link }}" class="social-link" target="_blank">
+                 <ion-icon name="logo-linkedin"></ion-icon>
+             </a>
+         </li>
+     {% endif %}
+ </ul>
+
+
+       </ul>
+
+     </div>
+
+   </aside>
+{% endfor %}

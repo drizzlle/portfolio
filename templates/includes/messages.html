@@ -1,0 +1,29 @@
+<style>
+    .red-close-button {
+        color: red;
+    }
+</style>
+
+{% if messages %}
+
+  {% for message in messages %}
+
+  <div id="message" class="container">
+      <div class="alert alert-{{ message.tags }}" role="alert">
+          <button type="button" name="button" class="close red-close-button" data-dismiss="alert">
+              <span aria-hidden="true">&times;</span>
+          </button>
+          <strong style="color: gold;">
+              {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                  Error:
+              {% else %}
+                  {{ message.tags|title }}
+              {% endif %}
+          </strong>
+          <span style="color: gold;">{{ message }}</span>
+      </div>
+  </div>
+
+  {% endfor %}
+
+{% endif %}
