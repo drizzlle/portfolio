@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from .models import Post, Profile, Service, Testimonial, Client, Education, Experience, Skill, Project
+from .models import Certificate, Profile, Service, Testimonial, Client, Education, Experience, Skill, Project
 from django.contrib.auth.models import User
 from django.core.mail import send_mail
 from django.contrib import messages
@@ -15,7 +15,7 @@ def home(request):
     skills = Skill.objects.all()
     projects = Project.objects.all()
     #Query the blog posts
-    posts = Post.objects.all()
+    certificates = Certificate.objects.all()
     #Contact
     if request.method == 'POST':
         full_name = request.POST['full_name']
@@ -24,7 +24,6 @@ def home(request):
 
         admin_info = User.objects.get(is_superuser=True)
         admin_email = admin_info.email
-
 
         email_subject = 'You have a new message from Portfolio'
         message_body = 'Name:' + full_name + '. Email:' + email + '. Message:' + message
@@ -46,13 +45,7 @@ def home(request):
         'experiences': experiences,
         'skills': skills,
         'projects': projects,
-        'posts': posts,  # Include the blog posts in the data dictionary
+        'certificates': certificates,  # Include the blog posts in the data dictionary
     }
     return render(request, "pages/home.html", data)
-
-
-# def sidebar(request):
-#     return render(request, "pages/sidebar.html")
-
-def post_detail(request):
-    return render(request, "pages/post_detail.html")
+    

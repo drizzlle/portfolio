@@ -1,0 +1,1717 @@
+[
+{
+    "model": "pages.profile",
+    "pk": 2,
+    "fields": {
+        "first_name": "Umar Aliyu",
+        "last_name": "Chalawa",
+        "designation": "Software Engineer",
+        "email": "aliyuumar1@gmail.com",
+        "date_of_birth": "02-Feb",
+        "photo": "photos/2024/01/my-avatar_1TLMKLR.png",
+        "facebook_link": "http://www.facebook.com",
+        "twitter_link": "http://www.twitter.com",
+        "instagram_link": "http://www.instagram.com",
+        "linkedin_link": "http://www.LinkedIn.com",
+        "phone_number": "+36 20 549 0124",
+        "location": "Furedi way, Debrecen",
+        "about_me": "<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\">I&#39;m Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.</span></span></p>\r\n\r\n<p><span style=\"font-size:12pt\"><span style=\"font-family:Aptos,sans-serif\">My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.</span></span></p>",
+        "service_title": "2024-01-24 18:15:20.636020",
+        "created": "2024-01-24T19:05:34.944"
+    }
+},
+{
+    "model": "pages.service",
+    "pk": 1,
+    "fields": {
+        "title": "Web Development",
+        "icon_url": "photos/2024/01/icon-dev.svg",
+        "description": "This is test",
+        "created": "2024-01-24T19:05:34.966"
+    }
+},
+{
+    "model": "pages.service",
+    "pk": 2,
+    "fields": {
+        "title": "Photo Graphy",
+        "icon_url": "photos/2024/01/icon-photo.svg",
+        "description": "This is test",
+        "created": "2024-01-24T19:05:34.966"
+    }
+},
+{
+    "model": "pages.service",
+    "pk": 3,
+    "fields": {
+        "title": "Travelling",
+        "icon_url": "photos/2024/01/icon-app.svg",
+        "description": "testing",
+        "created": "2024-01-24T19:05:34.966"
+    }
+},
+{
+    "model": "pages.service",
+    "pk": 4,
+    "fields": {
+        "title": "Testing apps",
+        "icon_url": "photos/2024/01/icon-design.svg",
+        "description": "testing apps",
+        "created": "2024-01-24T19:05:34.966"
+    }
+},
+{
+    "model": "pages.experience",
+    "pk": 1,
+    "fields": {
+        "organisation_name": "Bureau of Public Procurement",
+        "timeline": "2020 - 2021",
+        "postion": "IT Intern",
+        "summary": "<ul>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Handled technical calls from contractors and service providers through the federal contractor&rsquo;s portal. </tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Support the procurement process for IT equipment and services.</tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Propose design improvements to the Organization&rsquo;s ICT architecture and work with the ICT Business Partner to integrate requirements into the ICT strategic framework.</tt></span></li>\r\n</ul>",
+        "website": "https://www.bpp.gov.ng"
+    }
+},
+{
+    "model": "pages.experience",
+    "pk": 2,
+    "fields": {
+        "organisation_name": "Corona Management Systems",
+        "timeline": "2021 - Present",
+        "postion": "IT Officer",
+        "summary": "<ol>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Managed and maintained Azure cloud infrastructure for optimal performance and cost-efficiency.</tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Provisioned and configured virtual machines, storage, and networking resources in Azure.</tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Successfully managed and maintained Linux-based servers, ensuring optimal performance and uptime for critical applications.</tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Configured and secured web servers (Apache and Nginx) and database servers (MySQL, PostgreSQL),</tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Collaborated with cross-functional teams to develop and implement Azure-based solutions, including websites hosted on Azure App Services, to meet business needs.</tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Documented best practices, procedures, and troubleshooting guides for internal use.</tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Designed and developed websites for clients using WordPress, Django, with a strong proficiency in cPanel for web hosting management.</tt></span></li>\r\n\t<li style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Managed and provided ongoing support for websites built on the Laravel Framework, ensuring optimal performance through cPanel administration.</tt></span></li>\r\n</ol>",
+        "website": "http://www.coronams.com"
+    }
+},
+{
+    "model": "pages.education",
+    "pk": 1,
+    "fields": {
+        "school_name": "Kebbi State University of Science and Technology Aliero",
+        "timeline": "2015 - 2019",
+        "qualification": "BSc. Computer Science",
+        "summary": "<p style=\"text-align:justify\"><tt><span style=\"color:#dddddd\">BSc in Computer Science with expertise in foundational mathematics, programming languages (Java, C++, Python), data structures, and algorithms. Proficient in software engineering, web development, and database management. Skilled in operating systems, computer networks, and artificial intelligence concepts. Specialized in areas like cybersecurity. Successfully completed capstone projects and gained practical experience through internships. Demonstrates strong ethical considerations and possesses excellent communication, teamwork, and problem-solving skills.</span></tt></p>",
+        "website": null
+    }
+},
+{
+    "model": "pages.education",
+    "pk": 2,
+    "fields": {
+        "school_name": "University of Debrecen, Hungary",
+        "timeline": "2023-Present",
+        "qualification": "MSc Mechatronics Engineering",
+        "summary": "<p style=\"text-align:justify\"><tt><span style=\"color:#dddddd\">BSc in Computer Science with expertise in foundational mathematics, programming languages (Java, C++, Python), data structures, and algorithms. Proficient in software engineering, web development, and database management. Skilled in operating systems, computer networks, and artificial intelligence concepts. Specialized in areas like cybersecurity. Successfully completed capstone projects and gained practical experience through internships. Demonstrates strong ethical considerations and possesses excellent communication, teamwork, and problem-solving skills.</span></tt></p>",
+        "website": "http://unideb.hu"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 1,
+    "fields": {
+        "testimonial_title": "Muhammad Garba",
+        "testimonial_avi": "photos/2024/01/avatar-3.png",
+        "testimonials_text": "<p style=\"text-align:justify\">Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>",
+        "created": "2024-01-24T19:05:34.968"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 2,
+    "fields": {
+        "testimonial_title": "Mansur Mamman",
+        "testimonial_avi": "photos/2024/01/avatar-1.png",
+        "testimonials_text": "<p>Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>",
+        "created": "2024-01-24T19:05:34.968"
+    }
+},
+{
+    "model": "pages.testimonial",
+    "pk": 3,
+    "fields": {
+        "testimonial_title": "Koko Aadum",
+        "testimonial_avi": "photos/2024/01/avatar-2.png",
+        "testimonials_text": "<p>Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.</p>",
+        "created": "2024-01-24T19:05:34.968"
+    }
+},
+{
+    "model": "pages.client",
+    "pk": 2,
+    "fields": {
+        "client_title": "Coronams",
+        "client_logo": "photos/2024/01/logo-1-color_IwgptWP.png",
+        "created_date": "2024-01-24T19:31:46.050",
+        "client_url": "http://www.google.com"
+    }
+},
+{
+    "model": "pages.client",
+    "pk": 3,
+    "fields": {
+        "client_title": "GT bank",
+        "client_logo": "photos/2024/01/logo-2-color.png",
+        "created_date": "2024-01-24T19:31:56.025",
+        "client_url": "http://www.google.com"
+    }
+},
+{
+    "model": "pages.client",
+    "pk": 4,
+    "fields": {
+        "client_title": "Unideb",
+        "client_logo": "photos/2024/01/logo-3-color.png",
+        "created_date": "2024-01-24T19:32:19.505",
+        "client_url": "http://www.google.com"
+    }
+},
+{
+    "model": "pages.client",
+    "pk": 5,
+    "fields": {
+        "client_title": "Kebbi",
+        "client_logo": "photos/2024/01/logo-6-color.png",
+        "created_date": "2024-01-24T19:32:38.990",
+        "client_url": null
+    }
+},
+{
+    "model": "pages.skill",
+    "pk": 1,
+    "fields": {
+        "skill_title": "WordPress",
+        "skill_summary": "<p style=\"text-align:justify\"><span style=\"color:#dddddd\"><tt>Using WordPress for the development of dynamic and visually appealing WordPress websites. Specialized in custom theme and plugin development, responsive design implementation, and performance optimization. Collaborated cross-functionally, integrated SEO best practices, and provided client training and support. Proactively addressed issues through troubleshooting and debugging, demonstrating a commitment to excellence in WordPress development.</tt></span></p>"
+    }
+},
+{
+    "model": "pages.skill",
+    "pk": 2,
+    "fields": {
+        "skill_title": "MicroSoft Azure",
+        "skill_summary": "<p><span style=\"color:#dddddd\">Microsoft Azure Infrastructure, Linux OS, Windows, Mac Os</span></p>"
+    }
+},
+{
+    "model": "pages.skill",
+    "pk": 3,
+    "fields": {
+        "skill_title": "Security Utilities",
+        "skill_summary": "<p><tt><span style=\"color:#dddddd\"><strong>Security Utilities: </strong>Symantec Security Information Manager (SEIM, NMA)</span></tt></p>"
+    }
+},
+{
+    "model": "pages.project",
+    "pk": 1,
+    "fields": {
+        "project_title": "Website built for client",
+        "category": "Web development",
+        "photo": "photos/2024/01/project-1.jpg",
+        "summary": "This was built for a client who needed a simple site for his staffs",
+        "project_url": null
+    }
+},
+{
+    "model": "pages.project",
+    "pk": 2,
+    "fields": {
+        "project_title": "App developed for primary school students",
+        "category": "App development",
+        "photo": "photos/2024/01/project-2.png",
+        "summary": "This was built for a client who needed a simple site for his staffs",
+        "project_url": null
+    }
+},
+{
+    "model": "pages.project",
+    "pk": 3,
+    "fields": {
+        "project_title": "Wordpress for client",
+        "category": "Wordpress",
+        "photo": "photos/2024/01/project-3.jpg",
+        "summary": "This was built for a client who needed a simple site for his staffs",
+        "project_url": "http://www.google.com"
+    }
+},
+{
+    "model": "pages.certificate",
+    "pk": 1,
+    "fields": {
+        "title": "Whatsapp cert",
+        "content": "this is a test project",
+        "issuer": "Coursera",
+        "issue_date": "2024-02-03",
+        "photo": "certificate_photos/2024/02/blog-6.jpg",
+        "external_link": null
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$720000$30JIo0F2HE1uX3Y5U7e82m$pnpMBWlqhu42zLGQ3sVqmDptYxhdxMLVRo3t/dh+4ng=",
+        "last_login": "2024-01-29T00:38:19",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "Aliyu",
+        "last_name": "Umar",
+        "email": "info@aliyu.com.ng",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-01-23T16:03:40",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cy5xt86h02tpjhto9zve0cygxovvcxg1",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlmx8S-U9JzB2vWucQDZUpxUiLuTSCmgnZn33iLCupS4dp7jROIilDj9MoT05LoLekC9N5laXeYJ5Z7Iw3Z5a8Sv69H-HRToZVubHNAlDDqZ7GAg8ONGlAM7apPIZ1DMQRPiYCyxDxgwDeiQgJHsWXy-EEk5fw:1rTfi9:46nKslqdy2O5iO3EovwUv0-hGecZcoE_fyI-WQpaWeo",
+        "expire_date": "2024-02-10T10:14:53.276"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "okt25xfdi4z5tdahcpcxi8bpaocl4083",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlmx8S-U9JzB2vWucQDZUpxUiLuTSCmgnZn33iLCupS4dp7jROIilDj9MoT05LoLekC9N5laXeYJ5Z7Iw3Z5a8Sv69H-HRToZVubHNAlDDqZ7GAg8ONGlAM7apPIZ1DMQRPiYCyxDxgwDeiQgJHsWXy-EEk5fw:1rSJdu:u1TuoCaFVcNzouuTXvDf9Q5x-12wDo1ILS2ObO1btLc",
+        "expire_date": "2024-02-06T16:28:54.385"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "pr8tt1ei95jkqb1307dt80u7fotamiwn",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlmx8S-U9JzB2vWucQDZUpxUiLuTSCmgnZn33iLCupS4dp7jROIilDj9MoT05LoLekC9N5laXeYJ5Z7Iw3Z5a8Sv69H-HRToZVubHNAlDDqZ7GAg8ONGlAM7apPIZ1DMQRPiYCyxDxgwDeiQgJHsWXy-EEk5fw:1rUFfH:d0TH44jncuDb5pdCm5iyl6Z9UespECyxAyDP-kwdnN8",
+        "expire_date": "2024-02-12T00:38:19.280"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "xeyxn4j79ieldib9mfn7fv3irdltbit4",
+    "fields": {
+        "session_data": ".eJxVjDsOwjAQBe_iGlmx8S-U9JzB2vWucQDZUpxUiLuTSCmgnZn33iLCupS4dp7jROIilDj9MoT05LoLekC9N5laXeYJ5Z7Iw3Z5a8Sv69H-HRToZVubHNAlDDqZ7GAg8ONGlAM7apPIZ1DMQRPiYCyxDxgwDeiQgJHsWXy-EEk5fw:1rSJVE:0W96staIxTpuim7O51rsR1JDV2mZIp9dAJz3sF7Mt9A",
+        "expire_date": "2024-02-06T16:19:56.033"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2024-01-23T16:28:36.587",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "1",
+        "object_repr": "Profile object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2024-01-23T16:44:33.728",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "1",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2024-01-23T18:34:04.775",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "1",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2024-01-23T18:35:44.140",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2024-01-24T04:15:16.983",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Phone number\", \"Location\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2024-01-24T04:50:12.914",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "about"
+        ],
+        "object_id": "1",
+        "object_repr": "About object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2024-01-24T12:19:36.090",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"About me\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2024-01-24T12:20:07.649",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"About me\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2024-01-24T12:21:07.076",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2024-01-24T12:22:29.015",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"About me\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2024-01-24T12:38:08.867",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Service title\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2024-01-24T18:04:48.637",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "service"
+        ],
+        "object_id": "1",
+        "object_repr": "Service object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2024-01-24T18:05:05.756",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "service"
+        ],
+        "object_id": "1",
+        "object_repr": "Service object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Icon url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2024-01-24T18:16:08.857",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "service"
+        ],
+        "object_id": "1",
+        "object_repr": "Service object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Icon url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2024-01-24T18:17:42.075",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "service"
+        ],
+        "object_id": "1",
+        "object_repr": "Service object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Icon url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2024-01-24T18:25:29.777",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "service"
+        ],
+        "object_id": "1",
+        "object_repr": "Web Development",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2024-01-24T18:25:55.832",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "service"
+        ],
+        "object_id": "2",
+        "object_repr": "Photo Graphy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2024-01-24T18:26:35.761",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "service"
+        ],
+        "object_id": "3",
+        "object_repr": "Travelling",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2024-01-24T18:36:12.981",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "service"
+        ],
+        "object_id": "4",
+        "object_repr": "Testing apps",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2024-01-24T18:46:57.357",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2024-01-24T19:01:48.650",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "testimonial"
+        ],
+        "object_id": "1",
+        "object_repr": "Muhammad Garba",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2024-01-24T19:02:32.083",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "testimonial"
+        ],
+        "object_id": "2",
+        "object_repr": "Mansur Mamman",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2024-01-24T19:03:01.779",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "testimonial"
+        ],
+        "object_id": "3",
+        "object_repr": "Koko Aadum",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2024-01-24T19:31:46.051",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "2",
+        "object_repr": "Coronams",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2024-01-24T19:31:56.027",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "3",
+        "object_repr": "GT bank",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2024-01-24T19:32:19.508",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "4",
+        "object_repr": "Unideb",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2024-01-24T19:32:38.993",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "5",
+        "object_repr": "Kebbi",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2024-01-24T19:32:48.362",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "6",
+        "object_repr": "SkyMirro",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2024-01-25T17:42:00.406",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "6",
+        "object_repr": "SkyMirro",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2024-01-26T17:23:33.622",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "1",
+        "object_repr": "Kebbi State University of Science and Technology Aliero",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2024-01-26T17:24:28.926",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "2",
+        "object_repr": "University of Debrecen, Hungary",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2024-01-26T17:32:03.710",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "2",
+        "object_repr": "University of Debrecen, Hungary",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2024-01-26T17:32:07.213",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "1",
+        "object_repr": "Kebbi State University of Science and Technology Aliero",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2024-01-27T02:26:56.820",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "1",
+        "object_repr": "Kebbi State University of Science and Technology Aliero",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2024-01-27T02:27:03.514",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "2",
+        "object_repr": "University of Debrecen, Hungary",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2024-01-27T02:30:08.199",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "1",
+        "object_repr": "Kebbi State University of Science and Technology Aliero",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2024-01-27T02:31:03.104",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "1",
+        "object_repr": "Kebbi State University of Science and Technology Aliero",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2024-01-27T02:31:34.399",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "2",
+        "object_repr": "University of Debrecen, Hungary",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2024-01-27T02:31:46.639",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "1",
+        "object_repr": "Kebbi State University of Science and Technology Aliero",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2024-01-27T02:47:39.906",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "experience"
+        ],
+        "object_id": "1",
+        "object_repr": "Bureau of Public Procurement",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2024-01-27T02:50:18.971",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "experience"
+        ],
+        "object_id": "2",
+        "object_repr": "Corona Management Systems",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2024-01-27T03:08:19.796",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "skill"
+        ],
+        "object_id": "1",
+        "object_repr": "WordPress",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2024-01-27T03:09:09.605",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "skill"
+        ],
+        "object_id": "2",
+        "object_repr": "MicroSoft Azure",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2024-01-27T03:09:54.809",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "skill"
+        ],
+        "object_id": "3",
+        "object_repr": "Security Utilities",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2024-01-27T10:15:18.829",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "experience"
+        ],
+        "object_id": "2",
+        "object_repr": "Corona Management Systems",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Summary\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2024-01-28T11:24:12.108",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "project"
+        ],
+        "object_id": "1",
+        "object_repr": "Website built for client",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2024-01-28T11:24:38.401",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "project"
+        ],
+        "object_id": "2",
+        "object_repr": "App developed for primary school students",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2024-01-28T11:25:02.522",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "project"
+        ],
+        "object_id": "3",
+        "object_repr": "Wordpress for client",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2024-01-29T00:54:26.739",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "Design Conferences In 2022",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2024-01-29T00:54:49.573",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "2",
+        "object_repr": "web services news",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2024-01-29T00:55:47.029",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "3",
+        "object_repr": "whatsapp update",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2024-01-29T00:56:22.524",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "4",
+        "object_repr": "facebook",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2024-01-29T01:02:33.669",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "4",
+        "object_repr": "facebook",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2024-01-29T01:02:42.521",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "3",
+        "object_repr": "whatsapp update",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2024-01-29T01:02:51.976",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "2",
+        "object_repr": "web services news",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2024-01-29T01:02:55.587",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "2",
+        "object_repr": "web services news",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2024-01-29T01:03:03.000",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "Design Conferences In 2022",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2024-01-29T01:12:59.679",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "post"
+        ],
+        "object_id": "4",
+        "object_repr": "facebook",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Pub photo\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2024-02-02T17:22:57.423",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "admin",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2024-02-02T20:11:30.399",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "profile"
+        ],
+        "object_id": "2",
+        "object_repr": "Umar Aliyu",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Date of birth\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2024-02-03T00:40:18.422",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "certificate"
+        ],
+        "object_id": "1",
+        "object_repr": "Whatsapp cert",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2024-02-03T11:11:07.918",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "certificate"
+        ],
+        "object_id": "1",
+        "object_repr": "Whatsapp cert",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2024-02-03T11:32:27.283",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "certificate"
+        ],
+        "object_id": "1",
+        "object_repr": "Whatsapp cert",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2024-02-03T11:49:21.234",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "certificate"
+        ],
+        "object_id": "1",
+        "object_repr": "Whatsapp cert",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"External link\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2024-02-04T18:48:30.310",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "project"
+        ],
+        "object_id": "3",
+        "object_repr": "Wordpress for client",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Project url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2024-02-04T19:04:31.967",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "certificate"
+        ],
+        "object_id": "1",
+        "object_repr": "Whatsapp cert",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"External link\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2024-02-04T19:21:10.396",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "5",
+        "object_repr": "Kebbi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Client url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2024-02-04T19:21:22.464",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "4",
+        "object_repr": "Unideb",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Client url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2024-02-04T19:23:23.189",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "3",
+        "object_repr": "GT bank",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Client url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2024-02-04T19:23:36.494",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "3",
+        "object_repr": "GT bank",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2024-02-04T19:35:32.030",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "4",
+        "object_repr": "Unideb",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Client url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2024-02-04T19:35:40.596",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "3",
+        "object_repr": "GT bank",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Client url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2024-02-04T19:35:49.851",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "2",
+        "object_repr": "Coronams",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Client url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2024-02-04T19:46:47.005",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "client"
+        ],
+        "object_id": "5",
+        "object_repr": "Kebbi",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Client url\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2024-02-04T20:41:54.931",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "education"
+        ],
+        "object_id": "2",
+        "object_repr": "University of Debrecen, Hungary",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Website\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2024-02-04T21:15:00.404",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "certificate"
+        ],
+        "object_id": "1",
+        "object_repr": "Whatsapp cert",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Content\", \"External link\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2024-02-04T21:18:15.320",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "certificate"
+        ],
+        "object_id": "1",
+        "object_repr": "Whatsapp cert",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"External link\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2024-02-04T23:40:02.230",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "experience"
+        ],
+        "object_id": "2",
+        "object_repr": "Corona Management Systems",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Website\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2024-02-04T23:40:30.842",
+        "user": [
+            "admin"
+        ],
+        "content_type": [
+            "pages",
+            "experience"
+        ],
+        "object_id": "1",
+        "object_repr": "Bureau of Public Procurement",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Summary\", \"Website\"]}}]"
+    }
+}
+]

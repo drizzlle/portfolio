@@ -157,3 +157,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+function expandPhoto(photoUrl, title) {
+  document.getElementById('expandedPhoto').src = photoUrl;
+  document.getElementById('photoModal').style.display = 'block';
+  document.body.style.overflow = 'hidden'; // Disable scrolling while modal is open
+}
+
+function closeModal() {
+  document.getElementById('photoModal').style.display = 'none';
+  document.body.style.overflow = 'auto'; // Enable scrolling when modal is closed
+}

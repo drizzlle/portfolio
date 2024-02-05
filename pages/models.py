@@ -39,6 +39,7 @@ class Experience(models.Model):
     timeline = models.CharField(max_length=255)
     postion = models.CharField(max_length=255)
     summary = RichTextField(default='say something about your education')
+    website = models.URLField(blank=True, null=True)
     def __str__(self):
         return self.organisation_name
 
@@ -47,6 +48,7 @@ class Education(models.Model):
     timeline = models.CharField(max_length=255)
     qualification = models.CharField(max_length=255)
     summary = RichTextField(default='say something about your education')
+    website = models.URLField(blank=True, null=True)
     def __str__(self):
         return self.school_name
 
@@ -62,6 +64,7 @@ class Client(models.Model):
     client_title = models.CharField(max_length=255)
     client_logo = models.ImageField(upload_to='photos/%Y/%m/')
     created_date = models.DateTimeField(auto_now_add=True)
+    client_url = models.URLField(blank=True, null=True)
     def __str__(self):
         return self.client_title
 
@@ -84,18 +87,18 @@ class Project(models.Model):
     category = models.CharField( choices = category_choice, max_length=255)
     photo = models.ImageField(upload_to='photos/%Y/%m/')
     summary = models.CharField(max_length=255)
+    project_url = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.project_title
 
-class Post(models.Model):
-
+class Certificate(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
-    pub_date = models.DateTimeField(default=timezone.now)
-    pub_photo = models.ImageField(upload_to='photos/%Y/%m/')
-    category = models.CharField(max_length=255)
+    issuer = models.CharField(max_length=200)
+    issue_date = models.DateField(default=timezone.now)
+    photo = models.ImageField(upload_to='certificate_photos/%Y/%m/')
+    external_link = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.title

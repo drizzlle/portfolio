@@ -80,11 +80,13 @@
           </section>
         </div>
         <section class="clients">
-          <h3 class="h3 clients-title">Clients</h3>
+        <h3 class="h3 clients-title">Clients</h3>
           <ul class="clients-list has-scrollbar">
             {% for client in clients %}
             <li class="clients-item">
-              <a href="#">
+              {% if client.client_url %}
+              <a href="{{client.client_url}}" target="_blank">
+              {% endif %}
                 <img src="{{client.client_logo.url}}" alt="client logo">
               </a>
             </li>
@@ -109,6 +111,13 @@
               <h4 class="h4 timeline-item-title">{{education.school_name}}</h4>
               <span>{{education.qualification}}</span>
               <span>{{education.timeline}}</span>
+              {% if education.website %}
+              <a href="{{education.website}}" target="_blank" style="display: flex; align-items: center;">
+                <span style="margin-right: 5px;">School Website</span>
+                <span><ion-icon name="open-outline"></ion-icon> </span>
+              </a>
+              {% endif %}
+              <h5 class="h5"> Summary</h5>
               <p class="timeline-text">
                 {{education.summary | safe}}
               </p>
@@ -129,6 +138,13 @@
               <h4 class="h4 timeline-item-title">{{experience.organisation_name}}</h4>
               <span>{{experience.postion}}</span>
               <span>{{experience.timeline}}</span>
+              {% if experience.website %}
+              <a href="{{experience.website}}" target="_blank" style="display: flex; align-items: center;">
+                <span style="margin-right: 5px;">Website</span>
+                <span><ion-icon name="open-outline"></ion-icon> </span>
+              </a>
+              {% endif %}
+              <h5 class="h5"> Summary</h5>
               <p class="timeline-text">
                 {{experience.summary | safe}}
               </p>
@@ -185,87 +201,77 @@
           <ul class="project-list">
             {% for project in projects %}
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
+              {% if project.project_url %}
+              <a href="{{project.project_url}}" target="_blank">
+                {% endif %}
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="{{project.photo.url}}" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">{{project.project_title}}</h3>
-
                 <p class="project-category">{{project.category}}</p>
               </a>
             </li>
-
             {% endfor %}
-
           </ul>
-
         </section>
-
       </article>
       <!--
         - #BLOG
       -->
-
-      <article class="blog" data-page="blog">
-
+      <article class="blog" data-page="certificates">
         <header>
-          <h2 class="h2 article-title">Blog</h2>
+          <h2 class="h4 article-title">Certificates & awards</h2>
         </header>
-
         <section class="blog-posts">
-
           <ul class="blog-posts-list">
-
-            {% for post in posts %}
+            {% for certificate in certificates %}
             <li class="blog-post-item">
-              <a href="#">
+              <!-- <a href="#"> -->
+          <figure class="blog-banner-box">
+            <img src="{{certificate.photo.url}}" alt="Photo" loading="lazy" class="expandable-photo" onclick="expandPhoto('{{certificate.photo.url}}', '{{certificate.title}}')">
+          </figure>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <p class="blog-category">{{certificate.issuer}}</p>
+                <span class="dot"></span>
+                <time datetime="{{certificate.issue_date}}">{{certificate.issue_date}}</time>
+                {% if certificate.external_link %}
+                <span class="dot"></span>
+                <a href="{{certificate.external_link}}" target="_blank" style="display: flex; align-items: center; color: gold; text-decoration: none;">
+                  <span style="margin-right: 4px;">Verify Here</span>
+                  <span><ion-icon name="open-outline"></ion-icon></span>
+                </a>
+                {% endif %}
+              </div>
+            <h3 class="h3 certificate-item-title">
+              {{certificate.title}}
+            </h3>
+            <p class="blog-text">
+          {{certificate.content}}
+        </p>
+      </div>
+    <!-- </a> -->
+  </li>
+{% endfor %}
 
-                <figure class="blog-banner-box">
-                  <img src="{{post.pub_photo.url}}" alt="Design conferences in 2022" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">{{post.category}}</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">{{post.pub_date}}</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">{{post.title}}</h3>
-
-                  <p class="blog-text">
-                    {{post.content}}
-                  </p>
-                </div>
-              </a>
-            </li>
-            {% endfor %}
-
+<!-- Modal HTML -->
+<div id="photoModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="expandedPhoto" class="modal-content">
+</div>
           </ul>
-
         </section>
-
       </article>
-
       <!--
         - #CONTACT
       -->
-
       <article class="contact" data-page="contact">
-
         <header>
           <h2 class="h2 article-title">Contact</h2>
         </header>
-
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
@@ -273,11 +279,8 @@
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
-
         <section class="contact-form">
-
           <h3 class="h3 form-title">Contact Form</h3>
-
           <form action="{% url 'home' %}" method="POST" class="form" data-form>
             {% include 'includes/messages.html' %}
             {% csrf_token %}
@@ -293,17 +296,11 @@
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
           </form>
-
         </section>
-
       </article>
-
     </div>
-
   </main>
-
   <!--
     - custom js link
   -->
