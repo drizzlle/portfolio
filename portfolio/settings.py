@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-gtuw0&+n0@dljkmwjaa&=@x(jwc1t#7j0rl*%#*e-zf698%8mu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aliyu.com.ng']
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -157,8 +157,8 @@ MESSAGE_TAGS = {
 
 #email settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.aliyu.com.ng'
+EMAIL_HOST = ''
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'info@aliyu.com.ng'
-EMAIL_HOST_PASSWORD = 'a14Q(WfR(By45n'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = True
