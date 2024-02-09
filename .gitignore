@@ -166,7 +166,7 @@ cython_debug/
 
 /media
 /static
-/portfolio/settings.py
+portfolio/settings.py
 
 # PyCharm
 #  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
